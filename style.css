@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+
+#displayWordsOnScreen {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    font-size: 1.25rem;
+}
+
+.targetWord {
+    padding: .25rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+#poemStyling {
+    width: 500px;
+    margin: auto;
+}
+
+#poem {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#poem li {
+    list-style-type: none;
+    padding-left: .5rem;
+    
+}

@@ -1,4 +1,5 @@
 
+// Nice use of an object with arrays here, thats a good way to organize your words
 let words = {
     primary: ['flame', 'beg', 'borrow', 'break', 'steal', 'rob', 'abandon', 'absolute', 'admiration', 'adventure', 'advice', 'afternoon', 'again', 'against', 'aged', 'alarm', 'alcohol', 'brandy', 'wine', 'fine', 'aged', 'whiskey', 'spirit', 'morning', 'evening', 'night', 'alive', 'rich', 'dead', 'alone', 'full', 'surrounded', 'song', 'sing', 'poetry', 'ballad', 'amazed', 'ambitious', 'ancient', 'new', 'modernity', 'anger', 'sadness', 'joy', 'heart', 'peace of mind', 'peaceful', 'sky', 'star', 'starry', 'beautiful', 'desolate', 'devastation', 'home', 'house', 'building', 'April', 'July', 'September', 'October', 'December', 'architect', 'mind', 'art', 'artful', 'artistry', 'atmosphere', 'attraction', 'beauty', 'handsome', 'autumn', 'spring', 'summer', 'winter', 
     ],
@@ -8,9 +9,11 @@ let words = {
     ]
 } //an object set to an array of three categories of words to be used in the poem game
 
-let displayWord = [] // an empty array for randomly selected strings from words variables to be pushed to
 
+let displayWord = [] // an empty array for randomly selected strings from words variables to be pushed t
 let z; // created an empty global variable so the data in selectPoemWords() can be used in other functions
+
+
 
 
 function selectPoemWords(array) { //created a function with one argument that randomly selects a word from an arary and removes that selected word using the splice funciton. This funciton contains one parameter so that each object property can be passed through.
@@ -69,6 +72,8 @@ function outputDisplayWord() { // created a function to wrap each random word th
 
 outputDisplayWord(); //calls the function
 
+// good 
+
 let poem = []; // an empty array for the clicked poem words to be displayed in
 
 function addToPoem (clickedWord) { 
@@ -76,7 +81,7 @@ function addToPoem (clickedWord) {
     updatePoemDisplay();
 }
 
-function updatePoemDisplay() {}
+function updatePoemDisplay() {} // I think this was a mistake
 
 function updatePoemDisplay() {
     let poemDiv = document.getElementById("poem"); // set a new variable equal to the "poem" div
@@ -89,6 +94,7 @@ function updatePoemDisplay() {
     });
 }
 
+// good use of scope for the poem variable
 
 
 function deleteLastWord() { // function to delete the last word in the array
@@ -98,4 +104,8 @@ function deleteLastWord() { // function to delete the last word in the array
     }
 }
 
+/
+
 document.getElementById("deleteButton").addEventListener("click", deleteLastWord); // added an event listener to the delete button so that it calls the deleteLastWord() function on click
+
+// great example of functional programmin , simple and easy to read with good comments.
